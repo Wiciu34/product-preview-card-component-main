@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+.card {
+  position: relative;
+  margin: 10% auto;
+  height: 60rem;
+  width: 34rem;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+.card__img {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background-image: url("../images/image-product-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  z-index: 10;
+}
+.card__text {
+  position: absolute;
+  top: 40%;
+  height: 56%;
+  padding: 1.6rem;
+}
+.card__small-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+}
+.card__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: "Fraunces", serif;
+}
+.card__description {
+  padding-bottom: 1.3rem;
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+}
+.card__price {
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  color: hsl(158, 36%, 37%);
+}
+.card__small-price {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.card__btn {
+  position: absolute;
+  padding: 1.4rem;
+  width: 90%;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.card__btn img {
+  margin-right: 0.8rem;
+}
+.card__btn:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 50rem;
+    width: 60rem;
+  }
+  .card__img {
+    left: 0;
+    height: 100%;
+    width: 45%;
+    background-image: url("../images/image-product-desktop.jpg");
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .card__text {
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    padding: 3rem;
+  }
+  .card__small-title {
+    margin: 1.7rem 0;
+    letter-spacing: 0.4rem;
+  }
+  .card__title {
+    font-size: 3.6rem;
+  }
+  .card__description {
+    font-size: 1.6rem;
+  }
+  .card__price {
+    font-size: 4rem;
+    padding-top: 1rem;
+    margin-right: 2rem;
+  }
+  .card__small-price {
+    font-size: 1.5rem;
+  }
+  .card__btn {
+    left: 73%;
+    width: 45%;
+  }
+}/*# sourceMappingURL=style.css.map */
